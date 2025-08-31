@@ -1,0 +1,244 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #2c3e50;
+  padding-bottom: 80px;
+}
+
+/* Header */
+header {
+  background: #b71c1c;
+  color: #fff;
+  text-align: center;
+  padding: 16px 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+header h1 {
+  margin: 4px 0 8px;
+  font-size: 22px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Summary Cards */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 8px 0 20px;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+.card h3 {
+  margin: 6px 0 8px;
+  color: #b71c1c;
+}
+.card p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Blood Grid */
+.blood-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 8px;
+}
+.blood-box {
+  background: #fff;
+  border: 2px solid #b71c1c;
+  color: #b71c1c;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 800;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+.blood-box span {
+  color: #34495e;
+  font-weight: 700;
+}
+
+/* Forms */
+.form-table table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+.form-table td {
+  padding: 12px 14px;
+  vertical-align: middle;
+}
+.input-lg {
+  width: 320px;
+  max-width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #dfe6ee;
+  outline: none;
+}
+.input-lg:focus {
+  border-color: #b71c1c;
+}
+.btn-primary {
+  background: #b71c1c;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.btn-primary:hover {
+  background: #9f1313;
+}
+
+/* Search Bar */
+.search-bar {
+  max-width: 420px;
+  margin: 0 auto 16px;
+}
+.search-bar input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #dfe6ee;
+  outline: none;
+}
+.search-bar input:focus {
+  border-color: #b71c1c;
+}
+
+/* Tables */
+.table-wrap {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+thead th {
+  background: #b71c1c;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+}
+tbody td {
+  padding: 12px;
+  text-align: center;
+  border-top: 1px solid #eef1f6;
+}
+tbody tr:nth-child(even) {
+  background: #fafbfd;
+}
+.remove-btn {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.remove-btn:hover {
+  background: #c62828;
+}
+
+/* Toasts */
+#toast-container {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+}
+.toast {
+  background: #2ecc71;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  min-width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  font-weight: 700;
+}
+.toast.error { background: #e74c3c; }
+.toast.warn { background: #f39c12; }
+
+/* About Page */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  padding: 20px;
+  background: #f5f5f5;
+}
+.about-card {
+  background: #fff;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+.about-card h2 { color: #b71c1c; margin-bottom: 15px; }
+.about-card p { color: #333; line-height: 1.6; margin: 10px 0; }
+.about-details { margin-top: 20px; text-align: left; }
+.about-details h3 { color: #b71c1c; margin-bottom: 10px; }
+.about-details p { margin: 5px 0; }
+.about-details a { color: #b71c1c; text-decoration: none; }
+.about-details a:hover { text-decoration: underline; }
+.about-actions { margin-top: 20px; }
+.about-actions .btn-primary { display: inline-block; text-decoration: none; }
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 14px 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.12);
+}
+
+/* Responsive */
+@media(max-width:960px) { .summary-cards { grid-template-columns: 1fr; } .blood-grid { grid-template-columns: repeat(2,1fr); } }
+@media(max-width:520px) { .blood-grid { grid-template-columns: 1fr; } header h1 { font-size: 18px; } .about-card { padding: 20px; } }

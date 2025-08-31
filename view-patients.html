@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>View Patients</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Blood Bank Management System</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="add-donor.html">Add Donor</a>
+      <a href="view-donors.html">View Donors</a>
+      <a href="add-patient.html">Add Patient</a>
+      <a href="view-patients.html" class="active">View Patients</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <div id="toast-container"></div>
+
+  <main>
+    <h2 style="text-align:center;">Patient List</h2>
+
+    <div class="search-bar">
+      <input id="searchPatientInput" placeholder="Search by name or blood group (e.g., B-)" />
+    </div>
+
+    <div class="table-wrap">
+      <table id="patientTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Blood Group</th>
+            <th>Units</th>
+            <th>Contact</th>
+            <th>Hospital</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Blood Bank Management System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

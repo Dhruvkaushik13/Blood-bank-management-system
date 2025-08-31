@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Add Patient</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Blood Bank Management System</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="add-donor.html">Add Donor</a>
+      <a href="view-donors.html">View Donors</a>
+      <a href="add-patient.html" class="active">Add Patient</a>
+      <a href="view-patients.html">View Patients</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <div id="toast-container"></div>
+
+  <main>
+    <h2 style="text-align:center;">Check Blood Availability</h2>
+    <form id="checkAvailabilityForm" class="form-table">
+      <table>
+        <tr>
+          <td><label for="reqBloodGroup">Blood Group:</label></td>
+          <td>
+            <select id="reqBloodGroup" class="input-lg" required>
+              <option value="">Select</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="reqUnits">Required Units:</label></td>
+          <td><input id="reqUnits" class="input-lg" type="number" min="1" required /></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center;">
+            <button type="submit" class="btn-primary">Check Availability</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <form id="addPatientForm" class="form-table" style="display:none;" novalidate>
+      <h2 style="text-align:center;">Add Patient Details</h2>
+      <table>
+        <tr>
+          <td><label for="pname">Name:</label></td>
+          <td><input id="pname" class="input-lg" type="text" required /></td>
+        </tr>
+        <tr>
+          <td><label for="pbloodGroup">Blood Group:</label></td>
+          <td><input id="pbloodGroup" class="input-lg" type="text" readonly /></td>
+        </tr>
+        <tr>
+          <td><label for="punits">Units:</label></td>
+          <td><input id="punits" class="input-lg" type="number" readonly /></td>
+        </tr>
+        <tr>
+          <td><label for="pcontact">Contact (optional):</label></td>
+          <td><input id="pcontact" class="input-lg" type="text" /></td>
+        </tr>
+        <tr>
+          <td><label for="hospital">Hospital:</label></td>
+          <td><input id="hospital" class="input-lg" type="text" required /></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center;">
+            <button type="submit" class="btn-primary">Add Patient</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Blood Bank Management System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

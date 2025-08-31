@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blood Bank Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Blood Bank Management System</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="add-donor.html">Add Donor</a>
+      <a href="view-donors.html">View Donors</a>
+      <a href="add-patient.html">Add Patient</a>
+      <a href="view-patients.html">View Patients</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <div id="toast-container"></div>
+
+  <main>
+    <section class="summary-cards">
+      <div class="card">
+        <h3>Total Units</h3>
+        <p id="total-units">0</p>
+      </div>
+      <div class="card">
+        <h3>Total Donors</h3>
+        <p id="total-donors">0</p>
+      </div>
+      <div class="card">
+        <h3>Total Patients</h3>
+        <p id="total-patients">0</p>
+      </div>
+      <div class="card">
+        <h3>Most Available Group</h3>
+        <p id="most-group">—</p>
+      </div>
+    </section>
+
+    <h2 style="text-align:center;">Blood Units Availability</h2>
+    <div class="blood-grid">
+      <div class="blood-box" id="A+">A+ : <span>0</span></div>
+      <div class="blood-box" id="A-">A- : <span>0</span></div>
+      <div class="blood-box" id="B+">B+ : <span>0</span></div>
+      <div class="blood-box" id="B-">B- : <span>0</span></div>
+      <div class="blood-box" id="AB+">AB+ : <span>0</span></div>
+      <div class="blood-box" id="AB-">AB- : <span>0</span></div>
+      <div class="blood-box" id="O+">O+ : <span>0</span></div>
+      <div class="blood-box" id="O-">O- : <span>0</span></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Blood Bank Management System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
